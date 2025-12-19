@@ -1,0 +1,352 @@
+/* ------------------ Global Styles ------------------ */
+@import url("https://fonts.googleapis.com/css2?family=Muli&display=swap");
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "Muli", sans-serif;
+  line-height: 1.6;
+  color: #222;
+}
+
+/* ------------------ Navigation ------------------ */
+.nav {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+
+  height: 4rem;
+  background-color: #fff;
+  box-shadow: 0 2px 4px -1px rgba(0, 0, 0, 0.18);
+
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 0 2rem;
+}
+
+.nav-link {
+  color: #000;
+  text-decoration: green;
+  margin-left: 2rem;
+  font-weight: 500;
+}
+
+.nav-link:hover {
+  color: green;
+}
+
+/* ------------------ Header Section ------------------ */
+.header-content {
+  background-color: rgb(202, 248, 202);
+  min-height: 400px;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 10%;
+  gap: 2rem;
+}
+
+.header-text {
+  max-width: 520px;
+}
+
+.heading {
+  font-size: 2.5rem;
+  margin: 0 0 0.5rem;
+}
+
+button {
+  background-color: #107c41;
+  border: none;
+  color: #fff;
+
+  padding: 12px 28px;
+  font-size: 14px;
+  font-weight: 600;
+
+  cursor: pointer;
+  border-radius: 999px;
+  transition: background-color 0.2s ease;
+}
+
+button:hover {
+  background-color: #0e6c36;
+}
+
+/* ------------------ User Guide Section ------------------ */
+.user-guide-section {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 2rem; /* reduce gap slightly between text and image */
+  margin-bottom: 5rem; /* space below this section */
+  margin-top: 4rem;
+  margin-left: 4rem;
+}
+
+.user-guide-text {
+  flex: 1;
+  line-height: 26px;
+}
+
+.user-guide-image {
+  flex: 1;
+  text-align: center;
+}
+
+.user-guide-image img {
+  max-width: 90%; /* slightly smaller */
+  height: auto;
+  border-radius: 12px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+}
+
+/* ------------------ Transaction Guide Section ------------------ */
+.transaction-guide-section {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 9em; /* reduce gap slightly */
+  margin-bottom: 4rem; /* space below section */
+}
+
+.transaction-guide-text {
+  flex: 1;
+  line-height: 26px;
+}
+
+.transaction-guide-image {
+  flex: 1;
+  text-align: center;
+  margin-left: 2rem;
+}
+
+.transaction-guide-image img {
+  max-width: 90%; /* slightly smaller */
+  height: auto;
+  border-radius: 12px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+}
+
+/* ------------------ More Info Section ------------------ */
+.more-info-section {
+  background-color: rgb(234, 248, 234);
+  padding: 3rem 0;
+}
+
+.more-information {
+  max-width: 1000px;
+  margin: auto;
+  padding: 0 1rem;
+  text-align: justify;
+}
+
+.footer {
+  background-color: #f4f7f4;
+  padding: 2rem 1rem;
+  text-align: center;
+}
+
+/* ------------------ Footer ------------------ */
+
+.footer p {
+  margin: 0 0 1rem;
+  font-size: 14px;
+  color: #333;
+}
+
+.social-icons {
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+}
+
+.social-icons a {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: #e6efe9;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background-color 0.2s ease, transform 0.2s ease;
+}
+
+.social-icons a:hover {
+  background-color: #107c41;
+  transform: translateY(-2px);
+}
+
+.social-icons svg {
+  width: 20px;
+  height: 20px;
+  fill: #107c41;
+}
+
+.social-icons a:hover svg {
+  fill: #ffffff;
+}
+
+/* ------------------ About Page ------------------ */
+.about-container {
+  max-width: 1200px;
+  margin: auto;
+  padding: 4rem 1rem;
+}
+
+.about-section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 4rem;
+}
+
+/* Profile Card */
+.profile-card {
+  background: #ffffff;
+  padding: 2rem;
+  border-radius: 16px;
+  width: 300px;
+  text-align: center;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.12);
+}
+
+.profile-card img {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 1rem;
+}
+
+.profile-card h3 {
+  margin: 0.5rem 0 0.25rem;
+}
+
+.profile-card p {
+  font-size: 14px;
+  color: #555;
+  margin-bottom: 1.5rem;
+}
+
+/* Social Icons */
+.social-icons {
+  display: flex;
+  justify-content: center;
+  gap: 1.25rem;
+}
+
+.social-icons a {
+  font-size: 20px;
+  text-decoration: none;
+  color: #107c41;
+  transition: transform 0.2s ease;
+}
+
+.social-icons a:hover {
+  transform: translateY(-3px);
+}
+
+/* About Text */
+.about-text {
+  max-width: 500px;
+  text-align: justify;
+}
+
+.about-text h2 {
+  margin-bottom: 1rem;
+}
+
+.about-text p {
+  line-height: 1.7;
+  margin-bottom: 1rem;
+  color: #333;
+}
+
+.about-text ul {
+  margin-left: 1.2rem;
+  line-height: 1.8;
+}
+
+.about-text a {
+  color: #107c41;
+  font-weight: 500;
+  text-decoration: none;
+}
+
+.about-text a:hover {
+  text-decoration: underline;
+}
+
+.availability-note {
+  font-size: 14px;
+  color: #666;
+}
+
+/* ------------------ Responsive (Mobile) ------------------ */
+@media (max-width: 768px) {
+  .nav {
+    justify-content: right;
+  }
+
+  .header-content {
+    flex-direction: column;
+    text-align: center;
+    padding: 3rem 1.5rem;
+  }
+
+  .heading {
+    font-size: 2rem;
+  }
+
+  button {
+    width: 100%;
+    max-width: 280px;
+  }
+
+  .user-guide-section,
+  .transaction-guide-section {
+    flex-direction: column;
+    gap: 2rem; /* spacing between image and text */
+    margin-bottom: 3rem; /* space below section */
+    align-items: center; /* center the image container */
+    margin-left: 2rem;
+  }
+
+  .user-guide-text {
+    text-align: justify; /* keep text justified/left aligned */
+    width: 100%;
+  }
+
+  .transaction-guide-text {
+    text-align: justify; /* keep text justified/left aligned */
+    width: 100%;
+  }
+
+  .user-guide-image img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+  }
+
+  .transaction-guide-image img {
+    max-width: 85%;
+    height: auto;
+    display: block;
+    margin: 0 0; /* center image */
+  }
+
+  .about-section {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .about-text {
+    max-width: 100%;
+  }
+}
